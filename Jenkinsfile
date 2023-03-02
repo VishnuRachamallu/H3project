@@ -3,7 +3,7 @@ node{
     git branch: 'main', url: 'https://github.com/ktoso/maven-git-commit-id-plugin.git'
   }
   stage ('compile and deploy'){
-  sh 'javac TestMain.java'
-  sh 'java TestMain'
+bat '''javac TestMain.java
+java TestMain'''
   }
 }
