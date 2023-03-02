@@ -3,7 +3,7 @@ node{
     git 'https://github.com/VishnuRachamallu/H3project'
   }
   stage ('compile and deploy'){
-  javac TestMain.java
-  java TestMain
+  bat '''javac TestMain.java
+java TestMain'''
   }
 }
