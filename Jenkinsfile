@@ -1,6 +1,6 @@
 node{
   stage ('SCM checkout'){
-    git 'https://github.com/VishnuRachamallu/H3project'
+    git branch: 'main', url: 'https://github.com/ktoso/maven-git-commit-id-plugin.git'
   }
   stage ('compile and deploy'){
   sh 'javac TestMain.java'
